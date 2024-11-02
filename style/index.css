@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+
+.title{
+    background-color: #2f2a20;
+    color: white;
+    font-size: 56px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.text{
+    font-size: 24px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.answer{
+    display: flex;
+}
+
+.obake img{
+    margin-bottom: 40px;
+    width: 300px;
+    height: auto;
+
+}
+
+.human {
+    display: none;
+    font-size: 24px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    margin-top: 60px;
+    margin-left: 50px;
+    width: 60%;
+}
+
+.human table {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.human table th {
+    background-color: #2f2a20;
+    color: white;
+    font-weight: normal;
+}
+
+.who-1,.who-2,.who-3 {
+    width: 70%;
+}
+
+/* スタートボタン */
+.button{
+    font-size: 24px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    border: 4px solid #2f2a20;
+    color: #2f2a20;;
+    border-radius: 10px;
+}
+
+.button:hover{
+    background-color: #2f2a20;
+    color: #fff;
+}
+/* スタートボタン */
+
+
+.question-box{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    border: 4px solid #2f2a20;
+    margin-bottom: 20px;
+}
+
+.text-box{
+    font-weight: bold;
+    font-size: 24px;
+
+    text-align: center;
+}
+
+.text-box span{
+    opacity: 0.5;
+}
+
+.question{
+    font-size: 24px;
+    color: white;
+    background-color: #2f2a20;
+
+    text-align: center;
+}
+
+
+/* 「はい」「いいえ」 */
+.choice-box{
+    display: none;
+}
+
+.choice{
+    display: flex;
+}
+
+.choice p{
+    font-size: 24px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    width: 150px;
+    margin: auto;
+    border: 4px solid #2f2a20;
+    color: #2f2a20;
+    border-radius: 10px;
+}
+
+.choice p:hover {
+    background-color: #2f2a20;
+    color: #fff;
+}
+/* 「はい」「いいえ」 */

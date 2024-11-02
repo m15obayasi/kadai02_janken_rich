@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSSの読込 -->
+    <link rel="stylesheet" href="./style/index.css">
+    <title>じゃんけんアプリ</title>
+</head>
+<body>
+    <div class="title">アキネーター</div>
+    <div class="text">あなたが頭の中で考えている人物を、当てて見せます……</div>
+    <div class="answer">
+        <div class="obake">
+            <img src="./img/obake.png" alt=""></div>
+    <!-- 回答予想 -->
+        <div class="human">
+            <table>
+                <tr>
+                    <th>人物名</th>
+                    <th>確率</th>
+                </tr>
+                <tr>
+                    <td class="who-1">―――</td>
+                    <td class="kakudo-1">―――</td>
+                </tr>
+                <tr>
+                    <td class="who-2">―――</td>
+                    <td class="kakudo-2">―――</td>
+                </tr>
+                <tr>
+                    <td class="who-3">―――</td>
+                    <td class="kakudo-3">―――</td>
+                </tr>
+                <tr>
+                    <td class="who-4">―――</td>
+                    <td class="kakudo-4">―――</td>
+                </tr>
+                <tr>
+                    <td class="who-5">―――</td>
+                    <td class="kakudo-5">―――</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- 質問を表示 -->
+    <div class="question-box">
+        <div class="question">質問</div>
+        <div class="text-box">
+            <span>ここに質問が表示されます。</span>
+        </div>
+    </div>
+    <!-- スタートボタン -->
+    <div class="button">
+        スタート！
+    </div>
+    <!-- 選択ボタン -->
+    <div class="choice-box">
+        <div class="choice">
+            <p>はい</p>
+            <p>分からない</p>
+            <p>いいえ</p>
+        </div>
+    </div>
+
+    <!-- JavaScriptの読込 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/janken.js"></script>
+    <!-- JavaScriptの読込-->
+
+</body>
+</html>
