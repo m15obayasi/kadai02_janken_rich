@@ -1,6 +1,3 @@
-// var singi = 0;
-// var answer = 0;
-
 // スタートアクション＋1問目
 $(".button").on("click", function () {
     $(".button").fadeOut("fast");
@@ -674,7 +671,7 @@ $(".button").on("click", function () {
             $(".next").css("border","4px solid #2f2a20");
         } else {
             console.log("不正解");
-            $(".kekka").html("不正解");
+            $(".kekka").html("不正解（実在しません）");
             $(".kekka").css("background-color", "#4B92FF");
             $(".choice-A").fadeOut("fast");
             $(".choice-B").fadeOut("fast");
@@ -694,7 +691,7 @@ $(".button").on("click", function () {
             $(".next").css("background-color", "#2f2a20");
         } else {
             console.log("不正解");
-            $(".kekka").html("不正解");
+            $(".kekka").html("不正解（実在します）");
             $(".kekka").css("background-color", "#4B92FF");
             $(".choice-A").fadeOut("fast");
             $(".choice-B").fadeOut("fast");
