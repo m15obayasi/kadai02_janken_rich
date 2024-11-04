@@ -7,8 +7,8 @@
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-weight: bold;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* スタートボタン */
@@ -84,18 +84,14 @@
     font-size: 24px;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     text-align: center;
-    width: 408px;
     height: 50px;
     line-height: 50px;
     margin-top: 10px;
+    margin-bottom: 12px;
     color: white;
 
 }
-.kekka-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 /* 次へボタン */
 .next {
