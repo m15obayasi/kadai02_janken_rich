@@ -103,6 +103,8 @@
     height: 50px;
     line-height: 50px;
     margin-top: 10px;
+    border-radius: 10px;
+    border: 4px solid #2f2a20;
 }
 
 .next-box {
