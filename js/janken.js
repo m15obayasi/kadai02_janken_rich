@@ -1,4 +1,8 @@
-// スタートアクション＋1問目
+var totalQuestions = 10; // 全体の問題数
+var number = 0; // 今、何問目？
+var correct = 0; // 正解数
+
+// クイズのギミック
 $(".button, .next").on("click", function () {
     $(".button").fadeOut("fast");
     $(".choice-0").fadeIn("fast");
@@ -333,8 +337,9 @@ $(".button, .next").on("click", function () {
     }
 
     console.log("singi = " + singi);
+    console.log("number = " + number);
+    console.log('correct = ' + correct);
 
-    // 0「実在する」と回答
     $(".choice-A").on("click", function () {
         var answer = 0;
         console.log("answer = " + answer);
@@ -344,17 +349,16 @@ $(".button, .next").on("click", function () {
             $(".choice-A").fadeOut("fast");
             $(".choice-B").fadeOut("fast");
             $(".next-box, .next").fadeIn("fast");
+            // correct = correct + 1;
         } else if (answer != singi) {
-            $(".kekka").html("不正解（実在しません）");
+            $(".kekka").html("不正解");
             $(".kekka").css("background-color", "#4B92FF");
             $(".choice-A").fadeOut("fast");
             $(".choice-B").fadeOut("fast");
             $(".next-box, .next").fadeIn("fast");
-
         }
     });
 
-    // 1「実在しない」と回答
     $(".choice-B").on("click", function () {
         var answer = 1;
         console.log("answer = " + answer);
@@ -364,12 +368,33 @@ $(".button, .next").on("click", function () {
             $(".choice-A").fadeOut("fast");
             $(".choice-B").fadeOut("fast");
             $(".next-box, .next").fadeIn("fast");
-        } else if(answer != singi){
-            $(".kekka").html("不正解（実在します）");
+            // correct = correct + 1;
+        } else if (answer != singi) {
+            $(".kekka").html("不正解");
             $(".kekka").css("background-color", "#4B92FF");
             $(".choice-A").fadeOut("fast");
             $(".choice-B").fadeOut("fast");
             $(".next-box, .next").fadeIn("fast");
         }
     });
+});
+
+    // if (number <= totalQuestions) {
+    //     displayQuestion(number);
+    // } else {
+    //     // 全問終了時の処理
+    //     alert("クイズ終了！正解数は" + correct + "問です。");
+    // }
+    // });
+
+
+// 問題数を表示する関数
+function displayQuestion(questionNum) {
+// 問題数を表示する処理
+$(".question").html("第" + questionNum + "問");
+number = questionNum;
+}
+// ボタンをクリックしたときの処理
+$(".button, .next").click(function () {
+    displayQuestion(number + 1);
 });
