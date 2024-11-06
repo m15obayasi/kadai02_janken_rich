@@ -12,7 +12,7 @@ $(".button, .next").on("click", function () {
     $(".choice-B").fadeIn("fast");
     // 問題文を表示。singiは「真偽（正解）」
     // 0が「実在する」1は「実在しない」
-    var news = Math.floor(Math.random() * 106);
+    var news = Math.floor(Math.random() * 136);
     if (news === 0) {
         $(".text-box").html("工藤静香　自宅にタブレットが7台");
         var singi = 1;
@@ -334,67 +334,171 @@ $(".button, .next").on("click", function () {
     } else if (news === 105) {
         $(".text-box").html("岩井ジョニ男、初の冠番組「ジョニ男のぶらぶら昭和。」10月放送開始");
         var singi = 0;
+    } else if (news === 106) {
+        $(".text-box").html("工藤静香「今年もあっという間に」ディナーショーの開催を告知「特別な夜にしていただけたら」");
+        var singi = 0;
+    } else if (news === 107) {
+        $(".text-box").html("辻希美&杉浦太陽の長女、TikTokでレアな親子3ショットを公開「弟の友達に撮ってもらった」");
+        var singi = 0;
+    } else if (news === 108) {
+        $(".text-box").html("藤原紀香「朝ラーならぬ、朝うどん！」と本場香川ではしご　舞台公演の英気養う");
+        var singi = 0;
+    } else if (news === 109) {
+        $(".text-box").html("ギャル曽根の長男、回転寿司で食べる“皿数”は… 共演者も驚嘆「DNAだね！」");
+        var singi = 0;
+    } else if (news ===110) {
+        $(".text-box").html("ずん飯尾和樹、横断歩道をスムーズに渡るコツを伝授 「モーゼの十戒のように…」");
+        var singi = 0;
+    } else if (news === 111) {
+        $(".text-box").html("梅沢富美男、LINEを頑なに嫌がるも… “ある機能”の便利さに態度一変");
+        var singi = 0;
+    } else if (news === 112) {
+        $(".text-box").html("同じものをストック買いする人には、“ある特徴”が… マツコも驚き「そうですか！？」");
+        var singi = 0;
+    } else if (news === 113) {
+        $(".text-box").html("大沢たかお、京都散歩ショットに「まるでドラマシーン」「歩くだけでもうランウェイ」");
+        var singi = 0;
+    } else if (news === 114) {
+        $(".text-box").html("村重杏奈、マネージャーから“ムカつかれていること”が明らかに");
+        var singi = 0;
+    } else if (news === 115) {
+        $(".text-box").html("マギー、17年ぶりに同級生と奇跡の再会「みんなに聞いてほしい！！！」");
+        var singi = 0;
+    } else if (news === 116) {
+        $(".text-box").html("ナタリー・ポートマン、秋らしいダークな色合いの新ボブヘア披露");
+        var singi = 0;
+    } else if (news === 117) {
+        $(".text-box").html("霜降り明星、焼津温泉に満足「日本のグアムやで」");
+        var singi = 0;
+    } else if (news === 118) {
+        $(".text-box").html("いろはラムネが花ブービーに改名");
+        var singi = 0;
+    } else if (news === 119) {
+        $(".text-box").html("土屋太鳳のポッドキャスト番組「太鳳のひまわり日和！」配信スタート");
+        var singi = 1;
+    } else if (news === 120) {
+        $(".text-box").html("霜降り明星せいや、大好きなマグロでパフェを作る");
+        var singi = 0;
+    } else if (news === 121) {
+        $(".text-box").html("寺門ジモン、肉の焼き方が適当な人を許せない「肉の声が聞こえないの？」");
+        var singi = 0;
+    } else if (news === 122) {
+        $(".text-box").html("平野ノラ、藤田ニコルの結婚式に参列「感動で泣きっぱなしでした」");
+        var singi = 0;
+    } else if (news === 123) {
+        $(".text-box").html("川崎麻世、妻が朝6時前に起きて作った朝食「大好きなものばかり」");
+        var singi = 0;
+    } else if (news === 124) {
+        $(".text-box").html("小倉優子、全体的に茶色だった夕食を公開「とても美味しそう」「完璧」の声");
+        var singi = 0;
+    } else if (news === 125) {
+        $(".text-box").html("モト冬樹、頂き物を使った夕食のメニューを公開「島根から10キロ送られてきた」");
+        var singi = 0;
+    } else if (news === 126) {
+        $(".text-box").html("元欅坂４６・菅井友香　よく食べる男性は「素敵だと思います！」");
+        var singi = 0;
+    } else if (news === 127) {
+        $(".text-box").html("森泉　ＤＩＹでネジを打ちすぎて指が太くなったと明かす「指輪のサイズが変わっちゃった」");
+        var singi = 0;
+    } else if (news === 128) {
+        $(".text-box").html("奈緒、“健康オタク”の理由は「長くお酒と付き合っていくために」");
+        var singi = 0;
+    } else if (news === 129) {
+        $(".text-box").html("岡田将生、満島ひかりの一言に笑い止まらず「過呼吸になりそうです…(笑)」");
+        var singi = 0;
+    } else if (news === 130) {
+        $(".text-box").html("綾野剛、堂本剛にチョコレートケーキ贈る「バレンタインデーだったので…」");
+        var singi = 0;
+    } else if (news === 131) {
+        $(".text-box").html("京本大我、共演した坂口涼太郎の家賃5万円に驚き「本当!?」");
+        var singi = 0;
+    } else if (news === 132) {
+        $(".text-box").html("三谷幸喜監督、韓国で63歳誕生日祝われ「サランヘヨ～!」ファン350人と対面");
+        var singi = 0;
+    } else if (news === 133) {
+        $(".text-box").html("山田杏奈、尖っていた学生時代　当時の取材記事は「恥ずかしくて見られない」");
+        var singi = 0;
+    } else if (news === 134) {
+        $(".text-box").html("河合優実、いま熱中していることは“仕事ひとつ”「作品に取り組むことと生活は地続き」");
+        var singi = 0;
+    } else if (news === 135) {
+        $(".text-box").html("スザンヌ、座右の銘は「明日は明日の風が吹く」");
+        var singi = 1;
     }
-
     console.log("singi = " + singi);
-    console.log("number = " + number);
-    console.log('correct = ' + correct);
 
+// 「実在する」を押した
     $(".choice-A").on("click", function () {
         var answer = 0;
         console.log("answer = " + answer);
         if (answer == singi) {
             $(".kekka").html("正解");
             $(".kekka").css("background-color", "#FF4B4B");
-            $(".choice-A").fadeOut("fast");
-            $(".choice-B").fadeOut("fast");
+            $(".choice-A, .choice-B").fadeOut("fast");
             $(".next-box, .next").fadeIn("fast");
-            // correct = correct + 1;
+            displayAnswer(correct + 1);
         } else if (answer != singi) {
             $(".kekka").html("不正解");
             $(".kekka").css("background-color", "#4B92FF");
-            $(".choice-A").fadeOut("fast");
-            $(".choice-B").fadeOut("fast");
+            $(".choice-A, .choice-B").fadeOut("fast");
             $(".next-box, .next").fadeIn("fast");
         }
+        if (number === totalQuestions) {
+            if (correct >= 7) {
+                $(".saiten-kekka").fadeIn("fast");
+                $(".choice-0, .next, .correct, .question-box, .kekka").fadeOut("fast");
+                $(".saiten-box").html("10問中" + correct + "問正解。合格です！")
+            } else {
+                $(".saiten-kekka").fadeIn("fast");
+                $(".choice-0, .next, .correct, .question-box, .kekka").fadeOut("fast");
+                $(".saiten-box").html("10問中" + correct + "問正解。不合格です……")
+            }
+        }
+        $(".choice-A, .choice-B").off("click");
     });
 
+// 「実在しない」を押した
     $(".choice-B").on("click", function () {
         var answer = 1;
         console.log("answer = " + answer);
         if (answer == singi) {
             $(".kekka").html("正解");
             $(".kekka").css("background-color", "#FF4B4B");
-            $(".choice-A").fadeOut("fast");
-            $(".choice-B").fadeOut("fast");
+            $(".choice-A, .choice-B").fadeOut("fast");
             $(".next-box, .next").fadeIn("fast");
-            // correct = correct + 1;
+            displayAnswer(correct + 1);
         } else if (answer != singi) {
             $(".kekka").html("不正解");
             $(".kekka").css("background-color", "#4B92FF");
-            $(".choice-A").fadeOut("fast");
-            $(".choice-B").fadeOut("fast");
+            $(".choice-A, .choice-B").fadeOut("fast");
             $(".next-box, .next").fadeIn("fast");
         }
+        if (number === totalQuestions) {
+            if (correct >= 7) {
+                $(".saiten-kekka").fadeIn("fast");
+                $(".choice-0, .next, .correct, .question-box, .kekka").fadeOut("fast");
+                $(".saiten-box").html("10問中" + correct + "問正解。合格です！")
+            } else {
+                $(".saiten-kekka").fadeIn("fast");
+                $(".choice-0, .next, .correct, .question-box, .kekka").fadeOut("fast");
+                $(".saiten-box").html("10問中" + correct + "問正解。不合格です……")
+            }
+        }
+        $(".choice-A, .choice-B").off("click");
     });
 });
 
-    // if (number <= totalQuestions) {
-    //     displayQuestion(number);
-    // } else {
-    //     // 全問終了時の処理
-    //     alert("クイズ終了！正解数は" + correct + "問です。");
-    // }
-    // });
-
-
 // 問題数を表示する関数
 function displayQuestion(questionNum) {
-// 問題数を表示する処理
 $(".question").html("第" + questionNum + "問");
 number = questionNum;
 }
-// ボタンをクリックしたときの処理
 $(".button, .next").click(function () {
     displayQuestion(number + 1);
 });
+
+正解数を表示する関数
+function displayAnswer(correctNum) {
+$(".correct").html("正解数：" + correctNum);
+correct = correctNum;
+}
